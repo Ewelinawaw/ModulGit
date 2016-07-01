@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+@import url(https://fonts.googleapis.com/css?family=Chewy)
+
+
+$background-c: rgba(0,0,0,0.5)
+$color: white
+$color1: #fff
+$blue: #00C7E8
+
+.my-flex-center 
+  justify-content: center
+  align-items: center
+  
+=moj-kwadratowy-mixin ($wartosc)
+  height: $wartosc
+  width: $wartosc
+  
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: 'Open Sans', sans-serif
+  background: $color
+
+.row:before,
+.row:after
+  content: ""
+  display: table
+  clear: both
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: auto
+
+header
+  width: 1200px
+  margin: 0 auto
+  height: 50px
+  background-color: $background-c
+  
+.container header
+  width: 1200px
+  margin: 0 auto
+  
+
+header>nav>ul 
+  margin: 0
+  padding: 0
+  list-style-type: none
+  float: none
+  
+  
+header>nav>ul>li 
+  display:inline-block
+ 
+      
+header>nav>ul>li>a 
+  line-height: 50px
+  display: block
+  padding: 0 20px
+  color: $color1
+  text-decoration: none
+  text-transform: uppercase
+
+header>nav>img 
+  padding: 10px 0
+
+header>nav>ul>li>a
+  &:hover 
+    background: #ccc
+
+
+.blue 
+  color: $blue
+
+
+/*sekcja powitalna*/
+.hero
+  background: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=380affd09cabda13b364ce5fda0d7cbb)
+  width: 100%
+  height: 180vh
+  padding-top: 85vh
+  box-sizing: border-box
+  text-align: center
+  background-size: cover
+  overflow: hidden
+  
+
+.slogan
+  float: right
+  color: $color
+  text-transform: uppercase
+  background-color: $background-c
+  text-align: left
+  padding-left: 45px
+  width: 480px
+  height: 130px
+  left: 1135px
+  top: 315px
+  right: 1620px
+  bottom: 461px
+  font-weight: lighter
+  @extend .my-flex-center
+  
+.slogan
+  p
+    font-size: 22px
+
+  span
+    font-weight: bold
+
+
+
+.container
+  width: 100%
+  margin: 0 auto
+
+.row:before,
+.row:after
+  content: ""
+  display: table
+  clear: both
+
+[class*="col-"]
+  width: 100%
+  padding: 12px
+  float: left
+
+.col-1 
+  width: 8.33%
+.col-2 
+  width: 16.66%
+.col-3 
+  width: 25%
+.col-4 
+  width: 33.33%
+.col-5 
+  width: 41.66%
+.col-6 
+  width: 50%
+.col-7 
+  width: 58.33%
+.col-8 
+  width: 66.66%
+.col-9 
+  width: 75%
+.col-10 
+  width: 83.33%
+.col-11 
+  width: 91.66%
+.col-12 
+  width: 100%
+
+
+.col-offset-1 
+  margin-left: 8.33%
+.col-offset-2 
+  margin-left: 16.66%
+.col-offset-3 
+  margin-left: 25%
+.col-offset-4 
+  margin-left: 33.33%
+.col-offset-5 
+  margin-left: 41.66%
+.col-offset-6 
+  margin-left: 50%
+.col-offset-7 
+  margin-left: 58.33%
+.col-offset-8 
+  margin-left: 66.66%
+.col-offset-9 
+  margin-left: 75%
+.col-offset-10 
+  margin-left: 83.33%
+.col-offset-11 
+  margin-left: 91.66%
+
+.col-4
+  text-align: center
+
+section .container
+  margin: 50px auto
+  text-align: center
+
+.icon
+  i
+    font-size: 80px
+    background-color: #2B2D2C
+    display: inline-flex
+    @extend .my-flex-center
+    border-radius: 20%
+    color: $color1
+    padding: 20px
+    width: 150px
+    height: 150px
+  h1
+    text-transform: uppercase
+
+.icon:nth-of-type(even) i
+  background-color: $blue
+
+
+/*gallery title*/
+.galleryTitle
+  h1
+    font-size: 30px
+    color: black
+    text-transform: uppercase
+
+  p
+    font-size: 15px
+    color: grey
+
+.gallery
+  display: inline
+
+.gallery-image
+  position: relative
+
+  img
+    position: relative
+    width: 100%
+    &:hover,
+      cursor: pointer
+      background: $background-c
+
+    i
+      &:hover,
+        color: $blue
+      background-color: $color1
+      color: #565656
+      padding: 20px
+      border-radius: 10px
+      margin: 0 10px
+      cursor: pointer
+
+.gallery-image .layer
+  position: absolute
+  background-color: $background-c
+  display: none
+  left: 0
+  right: 0
+  top: 0
+  bottom: 5px
+  z-index: 2
+  text-align: center
+  cursor: pointer
+
+.gallery-image:hover .layer
+  display: block
+
+.gallery-image .layer .fa
+  margin: 50% 15px 0 15px
+  color: $color
+  cursor: pointer
+
+.fa-search:before
+  content: "\f002"
+
+.fa-lg
+  font-size: 1.33333333em
+  line-height: .75em
+  vertical-align: -15%
+
+.fa
+  display: inline-block
+  font: normal normal normal 14px/1 FontAwesome
+  text-rendering: auto
+
+
+
+/*team*/
+.team
+  font-family: 'Open Sans', sans-serif
+
+  img
+    border-radius: 50%
+
+.person
+  color: dimgrey
+
+
+/*awesome title*/
+.awesomeTitle
+  background-color: grey
+  color: $color
+  font-family: 'Open Sans', sans-serif
+
+
+.awesomeTitle 
+  img
+    display: block
+    position: absolute
+    height: 400px
+
+  p
+    text-align: left
+    color: $color
+    font-size: 20px
+    line-height: 35px
+
+  p:last-child
+    font-style: italic
+
+  h1
+    font-size: 40px
+    text-transform: uppercase
+    margin-bottom: 25px
+    text-align: left
+
+.awesomeTitle .col-4
+  position: relative
+
+/*statisticnumbers*/
+.statistic
+  font-family: Chewy
+
+  span
+    font-size: 48px
+    font-weight: bold
+
+  h2
+    color: $blue
+    font-size: 30px
+    text-transform: uppercase
+    .my-flex-center 
+
+
+/*footer*/
+.footer
+  color: $color
+  background-color: #313332
+  font-family: 'Open Sans', sans-serif
+
+  h2
+    text-transform: uppercase
+    font-size: 28px
+    text-align: left
+
+  p
+    font-size: 19px
+    color: whitesmoke
+    text-align: left
+    margin: 10px
+
+  span
+    text-align: left
+
+  h2:after
+    content: " "
+    width: 100px
+    height: 2px
+    background: $color1
+    position: absolute
+    margin-left: 20px
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+.about h2
+  position: relative
+
+.contact h2
+  position: relative
+
+
+.social h2
+  position: relative
+
+.row:before .row:after
+  content: ""
+  display: table
+  clear: both
+
+.fa-youtube:before
+  content: "\f167"
+
+.copyrights
+  background-color: black
+  color: $color
+  text-align: center
+
+  p
+    text-align: center
+
+
+/*footer social media*/
+
+.socialMedia
+  width: 100%
+  list-style: none
+  padding: 0
+
+  a
+    float: left
+    width: 40px
+    height: 30px
+    cursor: pointer
+    font-size: 20px
+    color: $color1
+    background-color: $blue
+    border: 5px
+    margin: 5px
+    +moj-kwadratowy-mixin(25%)
+
+
+
+
+
