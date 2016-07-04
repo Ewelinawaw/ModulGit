@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Chewy);
 .my-flex-center, .slogan, .icon i {
@@ -10,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: white; }
 
 .row:before,
@@ -57,7 +56,7 @@ header > nav > ul > li > a:hover {
 .blue {
   color: #00C7E8; }
 
-/*sekcja powitalna */
+/*sekcja powitalna*/
 .hero {
   background: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=380affd09cabda13b364ce5fda0d7cbb);
   width: 100%;
@@ -85,6 +84,7 @@ header > nav > ul > li > a:hover {
 
 .slogan p {
   font-size: 22px; }
+
 .slogan span {
   font-weight: bold; }
 
@@ -188,17 +188,19 @@ section .container {
   padding: 20px;
   width: 150px;
   height: 150px; }
+
 .icon h1 {
   text-transform: uppercase; }
 
 .icon:nth-of-type(even) i {
   background-color: #00C7E8; }
 
-/*gallery title */
+/*gallery title*/
 .galleryTitle h1 {
   font-size: 30px;
   color: black;
   text-transform: uppercase; }
+
 .galleryTitle p {
   font-size: 15px;
   color: grey; }
@@ -245,11 +247,11 @@ section .container {
   cursor: pointer; }
 
 .fa-search:before {
-  content: ""; }
+  content: "\f002"; }
 
 .fa-lg {
-  font-size: 1.33333em;
-  line-height: 0.75em;
+  font-size: 1.33333333em;
+  line-height: .75em;
   vertical-align: -15%; }
 
 .fa {
@@ -257,32 +259,35 @@ section .container {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto; }
 
-/*team */
+/*team*/
 .team {
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
   .team img {
     border-radius: 50%; }
 
 .person {
   color: dimgrey; }
 
-/*awesome title */
+/*awesome title*/
 .awesomeTitle {
   background-color: grey;
   color: white;
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 .awesomeTitle img {
   display: block;
   position: absolute;
   height: 400px; }
+
 .awesomeTitle p {
   text-align: left;
   color: white;
   font-size: 20px;
   line-height: 35px; }
+
 .awesomeTitle p:last-child {
   font-style: italic; }
+
 .awesomeTitle h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -292,7 +297,7 @@ section .container {
 .awesomeTitle .col-4 {
   position: relative; }
 
-/*statisticnumbers */
+/*statisticnumbers*/
 .statistic {
   font-family: Chewy; }
   .statistic span {
@@ -303,11 +308,11 @@ section .container {
     font-size: 30px;
     text-transform: uppercase; }
 
-/*footer */
+/*footer*/
 .footer {
   color: white;
   background-color: #313332;
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
   .footer h2 {
     text-transform: uppercase;
     font-size: 28px;
@@ -345,7 +350,7 @@ section .container {
   clear: both; }
 
 .fa-youtube:before {
-  content: ""; }
+  content: "\f167"; }
 
 .copyrights {
   background-color: black;
@@ -354,7 +359,7 @@ section .container {
   .copyrights p {
     text-align: center; }
 
-/*footer social media */
+/*footer social media*/
 .socialMedia {
   width: 100%;
   list-style: none;
